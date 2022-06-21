@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <h1>Электронная таблица</h1>
+
+        <label for="theme" class="theme">
+            <span class="condition">Светлая</span>
+            <span class="theme__toggle-wrap">
+                <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme">
+                <span class="theme__fill"></span>
+                <span class="theme__icon">
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                </span>
+            </span>
+            <span class="condition">Темная</span>
+        </label>
+
+        <div class="rate">
+            <h3>Курс валют</h3>
+            <div class="USD">
+                <h4>Доллар США $ — 00,0000 руб.</h4>
+            </div>
+            <div class="EUR">
+                <h4>Евро € — 00,0000 руб</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap-div">
+        <table id="table">
+            <tr>
+                <td class="string"></td>
+                <td class="column">A</td>
+                <td class="column">B</td>
+                <td class="column">C</td>
+                <td class="column">D</td>
+                <td class="column">E</td>
+                <td class="column">F</td>
+                <td class="column">G</td>
+                <td class="column">H</td>
+                <td class="column">I</td>
+                <td class="column">J</td>
+                <td class="column">K</td>
+                <td class="column">L</td>
+                <td class="column">M</td>
+                <td class="column">N</td>
+                <td class="column">O</td>
+            </tr>
+            <tr>
+                <td class="string">1</td>
+                <td class="contain" data-id="a1">5</td>
+                <td class="contain" data-id="b1">6</td>
+                <td class="contain" data-id="c1"></td>
+                <td class="contain" data-id="d1"></td>
+                <td class="contain" data-id="e1"></td>
+                <td class="contain" data-id="f1"></td>
+                <td class="contain" data-id="g1"></td>
+                <td class="contain" data-id="h1"></td>
+                <td class="contain" data-id="i1"></td>
+                <td class="contain" data-id="j1"></td>
+                <td class="contain" data-id="k1"></td>
+                <td class="contain" data-id="l1"></td>
+                <td class="contain" data-id="m1"></td>
+                <td class="contain" data-id="n1"></td>
+                <td class="contain" data-id="o1"></td>
+            </tr>
+            <tr>
+                <td class="string">2</td>
+                <td class="contain" data-id="a2">4</td>
+                <td class="contain" data-id="b2">7</td>
+                <td class="contain" data-id="c2"></td>
+                <td class="contain" data-id="d2"></td>
+                <td class="contain" data-id="e2"></td>
+                <td class="contain" data-id="f2"></td>
+                <td class="contain" data-id="g2"></td>
+                <td class="contain" data-id="h2"></td>
+                <td class="contain" data-id="i2"></td>
+                <td class="contain" data-id="j2"></td>
+                <td class="contain" data-id="k2"></td>
+                <td class="contain" data-id="l2"></td>
+                <td class="contain" data-id="m2"></td>
+                <td class="contain" data-id="n2"></td>
+                <td class="contain" data-id="o2"></td>
+            </tr>
+            <tr>
+                <td class="string">3</td>
+                <td class="contain" data-id="a3"></td>
+                <td class="contain" data-id="b3"></td>
+                <td class="contain" data-id="c3"></td>
+                <td class="contain" data-id="d3"></td>
+                <td class="contain" data-id="e3"></td>
+                <td class="contain" data-id="f3"></td>
+                <td class="contain" data-id="g3"></td>
+                <td class="contain" data-id="h3"></td>
+                <td class="contain" data-id="i3"></td>
+                <td class="contain" data-id="j3"></td>
+                <td class="contain" data-id="k3"></td>
+                <td class="contain" data-id="l3"></td>
+                <td class="contain" data-id="m3"></td>
+                <td class="contain" data-id="n3"></td>
+                <td class="contain" data-id="o3"></td>
+            </tr>
+            <tr>
+                <td class="string">4</td>
+                <td class="contain" data-id="a4"></td>
+                <td class="contain" data-id="b4"></td>
+                <td class="contain" data-id="c4"></td>
+                <td class="contain" data-id="d4"></td>
+                <td class="contain" data-id="e4"></td>
+                <td class="contain" data-id="f4"></td>
+                <td class="contain" data-id="g4"></td>
+                <td class="contain" data-id="h4"></td>
+                <td class="contain" data-id="i4"></td>
+                <td class="contain" data-id="j4"></td>
+                <td class="contain" data-id="k4"></td>
+                <td class="contain" data-id="l4"></td>
+                <td class="contain" data-id="m4"></td>
+                <td class="contain" data-id="n4"></td>
+                <td class="contain" data-id="o4"></td>
+            </tr>
+            <tr>
+                <td class="string">5</td>
+                <td class="contain" data-id="a5"></td>
+                <td class="contain" data-id="b5"></td>
+                <td class="contain" data-id="c5"></td>
+                <td class="contain" data-id="d5"></td>
+                <td class="contain" data-id="e5"></td>
+                <td class="contain" data-id="f5"></td>
+                <td class="contain" data-id="g5"></td>
+                <td class="contain" data-id="h5"></td>
+                <td class="contain" data-id="i5"></td>
+                <td class="contain" data-id="j5"></td>
+                <td class="contain" data-id="k5"></td>
+                <td class="contain" data-id="l5"></td>
+                <td class="contain" data-id="m5"></td>
+                <td class="contain" data-id="n5"></td>
+                <td class="contain" data-id="o5"></td>
+            </tr>
+            <tr>
+                <td class="string">6</td>
+                <td class="contain" data-id="a6"></td>
+                <td class="contain" data-id="b6"></td>
+                <td class="contain" data-id="c6"></td>
+                <td class="contain" data-id="d6"></td>
+                <td class="contain" data-id="e6"></td>
+                <td class="contain" data-id="f6"></td>
+                <td class="contain" data-id="g6"></td>
+                <td class="contain" data-id="h6"></td>
+                <td class="contain" data-id="i6"></td>
+                <td class="contain" data-id="j6"></td>
+                <td class="contain" data-id="k6"></td>
+                <td class="contain" data-id="l6"></td>
+                <td class="contain" data-id="m6"></td>
+                <td class="contain" data-id="n6"></td>
+                <td class="contain" data-id="o6"></td>
+            </tr>
+            <tr>
+                <td class="string">7</td>
+                <td class="contain" data-id="a7"></td>
+                <td class="contain" data-id="b7"></td>
+                <td class="contain" data-id="c7"></td>
+                <td class="contain" data-id="d7"></td>
+                <td class="contain" data-id="e7"></td>
+                <td class="contain" data-id="f7"></td>
+                <td class="contain" data-id="g7"></td>
+                <td class="contain" data-id="h7"></td>
+                <td class="contain" data-id="i7"></td>
+                <td class="contain" data-id="j7"></td>
+                <td class="contain" data-id="k7"></td>
+                <td class="contain" data-id="l7"></td>
+                <td class="contain" data-id="m7"></td>
+                <td class="contain" data-id="n7"></td>
+                <td class="contain" data-id="o7"></td>
+            </tr>
+            <tr>
+                <td class="string">8</td>
+                <td class="contain" data-id="a8"></td>
+                <td class="contain" data-id="b8"></td>
+                <td class="contain" data-id="c8"></td>
+                <td class="contain" data-id="d8"></td>
+                <td class="contain" data-id="e8"></td>
+                <td class="contain" data-id="f8"></td>
+                <td class="contain" data-id="g8"></td>
+                <td class="contain" data-id="h8"></td>
+                <td class="contain" data-id="i8"></td>
+                <td class="contain" data-id="j8"></td>
+                <td class="contain" data-id="k8"></td>
+                <td class="contain" data-id="l8"></td>
+                <td class="contain" data-id="m8"></td>
+                <td class="contain" data-id="n8"></td>
+                <td class="contain" data-id="o8"></td>
+            </tr>
+            <tr>
+                <td class="string">9</td>
+                <td class="contain" data-id="a9"></td>
+                <td class="contain" data-id="b9"></td>
+                <td class="contain" data-id="c9"></td>
+                <td class="contain" data-id="d9"></td>
+                <td class="contain" data-id="e9"></td>
+                <td class="contain" data-id="f9"></td>
+                <td class="contain" data-id="g9"></td>
+                <td class="contain" data-id="h9"></td>
+                <td class="contain" data-id="i9"></td>
+                <td class="contain" data-id="j9"></td>
+                <td class="contain" data-id="k9"></td>
+                <td class="contain" data-id="l9"></td>
+                <td class="contain" data-id="m9"></td>
+                <td class="contain" data-id="n9"></td>
+                <td class="contain" data-id="o9"></td>
+            </tr>
+            <tr>
+                <td class="string">10</td>
+                <td class="contain" data-id="a10"></td>
+                <td class="contain" data-id="b10"></td>
+                <td class="contain" data-id="c10"></td>
+                <td class="contain" data-id="d10"></td>
+                <td class="contain" data-id="e10"></td>
+                <td class="contain" data-id="f10"></td>
+                <td class="contain" data-id="g10"></td>
+                <td class="contain" data-id="h10"></td>
+                <td class="contain" data-id="i10"></td>
+                <td class="contain" data-id="j10"></td>
+                <td class="contain" data-id="k10"></td>
+                <td class="contain" data-id="l10"></td>
+                <td class="contain" data-id="m10"></td>
+                <td class="contain" data-id="n10"></td>
+                <td class="contain" data-id="o10"></td>
+            </tr>
+            <tr>
+                <td class="string">11</td>
+                <td class="contain" data-id="a11"></td>
+                <td class="contain" data-id="b11"></td>
+                <td class="contain" data-id="c11"></td>
+                <td class="contain" data-id="d11"></td>
+                <td class="contain" data-id="e11"></td>
+                <td class="contain" data-id="f11"></td>
+                <td class="contain" data-id="g11"></td>
+                <td class="contain" data-id="h11"></td>
+                <td class="contain" data-id="i11"></td>
+                <td class="contain" data-id="j11"></td>
+                <td class="contain" data-id="k11"></td>
+                <td class="contain" data-id="l11"></td>
+                <td class="contain" data-id="m11"></td>
+                <td class="contain" data-id="n11"></td>
+                <td class="contain" data-id="o11"></td>
+            </tr>
+            <tr>
+                <td class="string">12</td>
+                <td class="contain" data-id="a12"></td>
+                <td class="contain" data-id="b12"></td>
+                <td class="contain" data-id="c12"></td>
+                <td class="contain" data-id="d12"></td>
+                <td class="contain" data-id="e12"></td>
+                <td class="contain" data-id="f12"></td>
+                <td class="contain" data-id="g12"></td>
+                <td class="contain" data-id="h12"></td>
+                <td class="contain" data-id="i12"></td>
+                <td class="contain" data-id="j12"></td>
+                <td class="contain" data-id="k12"></td>
+                <td class="contain" data-id="l12"></td>
+                <td class="contain" data-id="m12"></td>
+                <td class="contain" data-id="n12"></td>
+                <td class="contain" data-id="o12"></td>
+            </tr>
+            <tr>
+                <td class="string">13</td>
+                <td class="contain" data-id="a13"></td>
+                <td class="contain" data-id="b13"></td>
+                <td class="contain" data-id="c13"></td>
+                <td class="contain" data-id="d13"></td>
+                <td class="contain" data-id="e13"></td>
+                <td class="contain" data-id="f13"></td>
+                <td class="contain" data-id="g13"></td>
+                <td class="contain" data-id="h13"></td>
+                <td class="contain" data-id="i13"></td>
+                <td class="contain" data-id="j13"></td>
+                <td class="contain" data-id="k13"></td>
+                <td class="contain" data-id="l13"></td>
+                <td class="contain" data-id="m13"></td>
+                <td class="contain" data-id="n13"></td>
+                <td class="contain" data-id="o13"></td>
+            </tr>
+            <tr>
+                <td class="string">14</td>
+                <td class="contain" data-id="a14"></td>
+                <td class="contain" data-id="b14"></td>
+                <td class="contain" data-id="c14"></td>
+                <td class="contain" data-id="d14"></td>
+                <td class="contain" data-id="e14"></td>
+                <td class="contain" data-id="f14"></td>
+                <td class="contain" data-id="g14"></td>
+                <td class="contain" data-id="h14"></td>
+                <td class="contain" data-id="i14"></td>
+                <td class="contain" data-id="j14"></td>
+                <td class="contain" data-id="k14"></td>
+                <td class="contain" data-id="l14"></td>
+                <td class="contain" data-id="m14"></td>
+                <td class="contain" data-id="n14"></td>
+                <td class="contain" data-id="o14"></td>
+            </tr>
+            <tr>
+                <td class="string">15</td>
+                <td class="contain" data-id="a15"></td>
+                <td class="contain" data-id="b15"></td>
+                <td class="contain" data-id="c15"></td>
+                <td class="contain" data-id="d15"></td>
+                <td class="contain" data-id="e15"></td>
+                <td class="contain" data-id="f15"></td>
+                <td class="contain" data-id="g15"></td>
+                <td class="contain" data-id="h15"></td>
+                <td class="contain" data-id="i15"></td>
+                <td class="contain" data-id="j15"></td>
+                <td class="contain" data-id="k15"></td>
+                <td class="contain" data-id="l15"></td>
+                <td class="contain" data-id="m15"></td>
+                <td class="contain" data-id="n15"></td>
+                <td class="contain" data-id="o15"></td>
+            </tr>
+            <tr>
+                <td class="string">16</td>
+                <td class="contain" data-id="a16"></td>
+                <td class="contain" data-id="b16"></td>
+                <td class="contain" data-id="c16"></td>
+                <td class="contain" data-id="d16"></td>
+                <td class="contain" data-id="e16"></td>
+                <td class="contain" data-id="f16"></td>
+                <td class="contain" data-id="g16"></td>
+                <td class="contain" data-id="h16"></td>
+                <td class="contain" data-id="i16"></td>
+                <td class="contain" data-id="j16"></td>
+                <td class="contain" data-id="k16"></td>
+                <td class="contain" data-id="l16"></td>
+                <td class="contain" data-id="m16"></td>
+                <td class="contain" data-id="n16"></td>
+                <td class="contain" data-id="o16"></td>
+            </tr>
+            <tr>
+                <td class="string">17</td>
+                <td class="contain" data-id="a17"></td>
+                <td class="contain" data-id="b17"></td>
+                <td class="contain" data-id="c17"></td>
+                <td class="contain" data-id="d17"></td>
+                <td class="contain" data-id="e17"></td>
+                <td class="contain" data-id="f17"></td>
+                <td class="contain" data-id="g17"></td>
+                <td class="contain" data-id="h17"></td>
+                <td class="contain" data-id="i17"></td>
+                <td class="contain" data-id="j17"></td>
+                <td class="contain" data-id="k17"></td>
+                <td class="contain" data-id="l17"></td>
+                <td class="contain" data-id="m17"></td>
+                <td class="contain" data-id="n17"></td>
+                <td class="contain" data-id="o17"></td>
+            </tr>
+            <tr>
+                <td class="string">18</td>
+                <td class="contain" data-id="a18"></td>
+                <td class="contain" data-id="b18"></td>
+                <td class="contain" data-id="c18"></td>
+                <td class="contain" data-id="d18"></td>
+                <td class="contain" data-id="e18"></td>
+                <td class="contain" data-id="f18"></td>
+                <td class="contain" data-id="g18"></td>
+                <td class="contain" data-id="h18"></td>
+                <td class="contain" data-id="i18"></td>
+                <td class="contain" data-id="j18"></td>
+                <td class="contain" data-id="k18"></td>
+                <td class="contain" data-id="l18"></td>
+                <td class="contain" data-id="m18"></td>
+                <td class="contain" data-id="n18"></td>
+                <td class="contain" data-id="o18"></td>
+            </tr>
+            <tr>
+                <td class="string">19</td>
+                <td class="contain" data-id="a19"></td>
+                <td class="contain" data-id="b19"></td>
+                <td class="contain" data-id="c19"></td>
+                <td class="contain" data-id="d19"></td>
+                <td class="contain" data-id="e19"></td>
+                <td class="contain" data-id="f19"></td>
+                <td class="contain" data-id="g19"></td>
+                <td class="contain" data-id="h19"></td>
+                <td class="contain" data-id="i19"></td>
+                <td class="contain" data-id="j19"></td>
+                <td class="contain" data-id="k19"></td>
+                <td class="contain" data-id="l19"></td>
+                <td class="contain" data-id="m19"></td>
+                <td class="contain" data-id="n19"></td>
+                <td class="contain" data-id="o19"></td>
+            </tr>
+            <tr>
+                <td class="string">20</td>
+                <td class="contain" data-id="a20"></td>
+                <td class="contain" data-id="b20"></td>
+                <td class="contain" data-id="c20"></td>
+                <td class="contain" data-id="d20"></td>
+                <td class="contain" data-id="e20"></td>
+                <td class="contain" data-id="f20"></td>
+                <td class="contain" data-id="g20"></td>
+                <td class="contain" data-id="h20"></td>
+                <td class="contain" data-id="i20"></td>
+                <td class="contain" data-id="j20"></td>
+                <td class="contain" data-id="k20"></td>
+                <td class="contain" data-id="l20"></td>
+                <td class="contain" data-id="m20"></td>
+                <td class="contain" data-id="n20"></td>
+                <td class="contain" data-id="o20"></td>
+            </tr>
+        </table>
+        <div class="add"><button class="add-column">Добавить столбец</button></div>
+    </div>
+    <div class="add"><button class="add-row">Добавить строку</button></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
